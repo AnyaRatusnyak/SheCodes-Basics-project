@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scuba diving</title>
+    <style>
+      .container {
+        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        max-width: 50%;
+        margin: 30px auto;
+        padding: 30px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #5f5dbd;
+      }
+      h1 {
+        font-size: 36px;
+        border: 2px solid #5585b5;
+        border-radius: 10px;
+        padding: 20px 20px;
+      }
+      hr {
+        border: none;
+        color: #5585b5;
+        background-color: #5585b5;
+        height: 2px;
+      }
+      img {
+        display: block;
+        margin: 30px auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #5f5dbd;
+      }
+      span {
+        font-size: 28px;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        color: #5f5dbd;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 20px 30px;
+        font-size: 45px;
+        color: #5f5dbd;
+        background: #ffc93c;
+        border-radius: 10px;
+        border: 2px solid blue;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        background-color: #ff6f3c;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I like underwater diving</h1>
+      <h2>Especially scuba diving</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/957/original/shutterstock_141494932-1-1366x800_2x.jpg?1654072926"
+        alt="Underwater diving"
+      />
+      <hr />
+      <p>
+        <strong
+          ><span><em> Scuba diving </em></span> is mainly done for the
+          attraction of the unattainable undersea world. It is one area of
+          nature that mankind has not been able to fully control, we simply are
+          not able to breathe underwater. Hence, scuba diving gives us an
+          opportunity to be in that underwater world, even if it is just for a
+          limited amount of time.<br />
+          Of course, the underwater world is beautiful as well, with many people
+          opting for scuba diving in Asia or scuba diving in the Red Sea or the
+          Great Barrier Reef, said to be some of the world’s best scuba diving
+          locations. The different colors and marine wildlife are so impressive
+          in all these locations that people find themselves returning over and
+          over again.</strong
+        >
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Scuba_diving" target="_blank"
+        >Read on Wikipedia</a
+      >
+      <button>Try scuba diving</button>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age < 8) {
+          alert(`Sorry, ${name}😒 You can't try scuba diving.`);
+        } else {
+          let email = prompt("What is your email address?");
+          alert(`Thank you, ${name}! We'll be in touch😀`);
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
